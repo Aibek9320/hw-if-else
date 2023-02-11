@@ -1,5 +1,5 @@
 // task1
-let a = 'tests'
+let a = 'test'
 if(a = 'test'){
     console.log('Верно')
 }    
@@ -7,6 +7,7 @@ else{
     console.log('Неверно')
 }
 
+a = 'test' ? console.log('Верно') : console.log('Неверно')
 // task2
 let m = 49
 let n
@@ -18,73 +19,84 @@ else {
 }
 console.log(n)
 
+// тернарный метод
+m > 50 ? n = 'большое' : n = 'маленькое'
+console.log(n)
+
 // taks3
 let aa = 5
 if(aa === 0 || aa === 2){
-    aa = aa + 7 
+    console.log(aa + 7) 
 }
 else{
-    aa = aa / 10
+    console.log(aa / 10)
 }
-console.log(aa)
+// тернарный метод
+aa === 0 || aa === 2 ? console.log(aa + 7) : console.log(aa / 10)
 
 let b = 0
 if(b === 0 || b === 2){
-    b = b + 7 
+    console.log(b + 7) 
 }
 else{
-    b = b / 10
+    console.log(b / 10)
 }
-console.log(b)
+// тернарный метод
+b === 0 || b === 2 ? console.log(b + 7) : console.log(b / 10)
 
 let c = -3
 if(c === 0 || c === 2){
-    c = c + 7 
+    console.log(c + 7 ) 
 }
 else{
-    c = c / 10
+    console.log(c / 10)
 }
-console.log(c)
+// тернарный метод
+c === 0 || c === 2 ? console.log(c + 7 ) : console.log(c / 10)
 
 let v = 2
 if(v === 0 || v === 2){
-    v = v + 7 
+    console.log(v + 7) 
 }
 else{
-    v = v / 10
+    console.log(v = v / 10)
 }
-console.log(v)
-
+// тернарный метод
+v === 0 || v === 2 ? console.log(v + 7) : console.log(v = v / 10)
 // task4
 let ac = 1 
     b = 3
 if(ac <= 1 && b >= 3){
-    c = ac + b
+    console.log(ac + b)
 }
 else{
-    c = ac - b
+    console.log(ac - b)
 }
-console.log(c)
+// тернарный метод
+ac <= 1 && b >= 3 ? console.log(ac + b) : console.log(ac - b)
+
 
 let q = 0 
     w = 6
 if(q <= 1 && w >= 3){
-    e = q + w
+    console.log(q + w)
 }
 else{
-    e = q - w
+    console.log(q - w)
 }
-console.log(e)
+// тернарный метод
+q <= 1 && w >= 3 ? console.log(q + w) : console.log(q - w)
 
 let r = 3 
     t = 5
 if(r <= 1 && t >= 3){
-    y = r + t
+    console.log(r + t)
 }
 else{
-    y = r - t
+    console.log(r - t)
 }
-console.log(y)
+// тернарный метод
+r <= 1 && t >= 3 ? console.log(r + t) : console.log(r - t)
 
 // task5
 let seasons = 'июнь'
@@ -131,19 +143,18 @@ else{
 }
 
 // task7
-let num = 15 
+let num = 5 
 if(0 == num % 3 && 0 == num % 5){
     console.log('MasterYoda')
 }                            
-if(0 == num % 3){
+else if(0 == num % 3){
     console.log('Master')
 }                        
 else{
     console.log('Yoda')
 }
 
-let num = 15
-if
+let  = 15
 
 
                                                                                       
