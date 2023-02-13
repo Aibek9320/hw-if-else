@@ -1,4 +1,5 @@
 // task1
+// if else
 let a = 'test'
 if(a = 'test'){
     console.log('Верно')
@@ -35,20 +36,11 @@ m > 50 ? n = 'большое' : n = 'маленькое'
 console.log(n)
 //switch case 2
 let mm = 49
-switch (mm) {
-    case 50 :
-    case 51 :
-    case 52 :
-    case 53 :
-    case 54 :
-    case 55 :
+switch (true) {
+    case (m > 50) :
     console.log(n = 'большое')
         break;
-    case 49 :
-    case 48 :
-    case 47 :
-    case 46 :
-    case 45 :
+    default:
     console.log(n = 'маленькое')
         break;    
 }
@@ -149,7 +141,15 @@ else{
 }
 // тернарный метод4
 ac <= 1 && b >= 3 ? console.log(ac + b) : console.log(ac - b)
-switch(ac && b){
+//switch case
+let wac = 1 
+    wb = 3 
+switch(true){
+    case (wac <= 1 && wb >= 3):
+        console.log(wac+wb);
+        break;
+    default:
+        console.log(wac-wb);
     
 }
 
@@ -163,7 +163,18 @@ else{
 }
 // тернарный метод
 q <= 1 && w >= 3 ? console.log(q + w) : console.log(q - w)
+// switch case
+let wq = 0
+    ww = 6
+switch(true){
+    case (wq <= 1 && ww>= 3):
+        console.log(wq + ww);
+        break;
+    default:
+        console.log(wq = ww);
+}
 
+//if else
 let r = 3 
     t = 5
 if(r <= 1 && t >= 3){
@@ -174,8 +185,41 @@ else{
 }
 // тернарный метод
 r <= 1 && t >= 3 ? console.log(r + t) : console.log(r - t)
+//switch case
+let wr = 3
+    wt = 5
+switch(true){
+    case (wr <= 1 && wt>= 3):
+        console.log(wr = wt);
+        break;
+    default:
+        console.log(wr - wt);
+}
 
 // task5
+
+//if else
+let season = 'июнь'
+if(season === 'декабрь' || season === 'январь' || season === 'февраль'){
+    console.log('зима')
+}
+if(season === 'апрель' || season === 'март' || season == 'май'){
+    consonle.log('весна')
+}
+if(season === 'июнь' || season === 'июль' || season === 'август'){
+    console.log('лето')
+}
+if(season === 'сентябрь' || season === 'октябрь' || season === 'ноябрь'){
+    console.log('осень')
+}
+
+//тернарный метод
+season === 'декабрь' || season === 'январь' || season === 'февраль' ? console.log('зима'):
+season === 'апрель' || season === 'март' || season == 'май' ? consonle.log('весна') :
+season === 'июнь' || season === 'июль' || season === 'август' ? console.log('лето') : 
+season === 'сентябрь' || season === 'октябрь' || season === 'ноябрь' ? console.log('осень') : console.log('не такого времени года')
+
+// switch case 
 let seasons = 'июнь'
 switch (seasons) {
     case 'декабрь':
@@ -201,6 +245,8 @@ switch (seasons) {
 }
 
 // task6
+
+//if else
 let time = 55
 if(time >= 0 && time <= 15){
     console.log('время относится к четверти часа')
@@ -219,19 +265,61 @@ else{
     
 }
 
+//тернарный метод
+time >= 0 && time <= 15 ? console.log('время относится к четверти часа') : 
+time > 15 && time <= 30 ? console.log('время относится к половине часа') : 
+time > 30 && time <= 45 ? console.log('время относится к 3/4 часа') :
+time > 45 && time <= 60 ? console.log('время относится к целому часу') : console.log('неизвестный диапазон')
+
+//switch case
+let times = 55
+switch(true){
+    case (time >= 0 && time <= 15):
+        console.log('время относится к четверти часа')
+        break;
+    case (time > 15 && time <= 30):
+        console.log('время относится к половине часа')
+        break;
+    case (time > 30 && time <= 45):
+        console.log('время относится к 3/4 часа')
+        break;
+    case (time > 45 && time <= 60):
+        console.log('время относится к целому часу')
+        break;
+
+}
+
+
 // task7
+
+// if else
 let num = 5 
-if(0 == num % 3 && 0 == num % 5){
+if(0 === num % 3 && 0 === num % 5){
     console.log('MasterYoda')
 }                            
-else if(0 == num % 3){
+else if(0 === num % 3){
     console.log('Master')
 }                        
 else{
     console.log('Yoda')
 }
 
-let  = 15
 
+//тернарный метод
+0 === num % 3 && 0 === num % 5 ? console.log('MasterYoda') : 
+0 === num % 3 ? console.log('Master') : 
+0 === num % 5 ? console.log('Yoda') : console.log('undefined')
 
-                                                                                      
+//switch case
+let nums = 5
+switch(true){
+    case (0 === nums % 3 && 0 === nums % 5):
+        console.log('MasterYoda')
+        break;
+    case (0 === nums % 3):
+        console.log('Master')
+        break;
+    case 0 === nums % 5:
+        console.log('Yoda')
+        break;
+}
